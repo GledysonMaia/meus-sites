@@ -10,33 +10,33 @@
 }
 
 :root {
-    --fonte-titulo: 'Passion One', cursive;
-    --fonte-padrao: 'Sriracha', cursive;
-    --fonte-cred: 'Verdana';
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive;
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html, body {
     background-color: rgb(199, 199, 199);
     min-height: 100vh;
+    font-family: var(--fonte3);
 }
 
 header {
-    height: 300px;
+    height: 33vw;
     background-color: black;
     color: white;
     text-align: center;
 }
 
 header h1 {
-    font-family: var(--fonte-titulo);
-    font-size: 20vh;
+    font-family: var(--fonte1);
+    font-size: 15vw;
     font-variant: small-caps;
-    padding-top: 50px;
-    width: 100%;
+    padding-top: 7vw;
 }
 
 header p {
-    font-family: var(--fonte-cred);
+    font-family: var(--fonte3);
     padding-bottom: 50px;
 }
 
@@ -51,6 +51,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -65,7 +67,8 @@ section.imagem {
 
 section.imagem p {
     background-color: rgba(0, 0, 0, 0.274);
-    width: 300px;
+    display: inline-block;
+    padding: 5px;
 }
 
 header a:hover, footer a:hover {
