@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(40, 40, 40);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(odd) { /*2n-1*/
+            background-color: rgb(228, 228, 228);
+        }
+
+        tbody tr:nth-child(even) { /*2n*/
+            background-color: gray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(40, 40, 40);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD. TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17264943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14985284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11597484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11466630</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9674793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9240580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8777124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7338473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7206589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7153262</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4269995</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4108508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4059905</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3567234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3560903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3365351</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3289290</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>3094325</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2839188</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2338474</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1815278</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1607363</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>906876</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>877613</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>652713</td>
+            </tr>            
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <th>210147125</th>
+        </tfoot>
+    </table>
+</body>
+</html>
