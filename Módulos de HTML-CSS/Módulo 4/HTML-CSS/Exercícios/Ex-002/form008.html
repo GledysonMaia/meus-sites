@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário, mas com output</title>
+    <style>
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        form > p > input.largo {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulários</h1>
+        <p>FINALMENTE UMA COISA NOVA COM FORMULÁRIOS(que vão ser outputs)</p>
+    </div>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inum1">Número 1: </label>
+            <input type="number" name="" id="inum1" class="largo" min="0" max="100" required placeholder="De 0 a 100" oninput="isom.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Número 2: </label>
+            <input type="number" name="" id="inum2" class="largo" min="0" max="100" required placeholder="De 0 a 100" oninput="isom.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <label for="isom">Soma: </label>
+        <output name="" id="isom">0</output>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
