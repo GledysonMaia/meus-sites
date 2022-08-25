@@ -24,6 +24,7 @@ header h1 {
 menu {
     background-color: rgb(88, 88, 88);
     width: 100vw;
+    display: none;
 }
 
 menu > ul {
@@ -69,4 +70,32 @@ article > p {
 
 article > h2 {
     margin: 0px 0px 10px 0px;
+}
+
+img#microsoft {
+    margin-left: 30px;
+}
+
+img#bill {
+    display: block;
+    margin: 20px auto;
+    min-width: 300px;
+    max-width: 600px;
+    width: 60%;
+}
+
+i#menu {
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    width: 100vw;
+    padding: 7px;
+    color: white;
+    padding: 10px;
+}
+
+i#menu:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    transition-duration: 250ms;
 }

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Testando Media Queries</h1>
-        <menu>
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>           
+        <menu id="items">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,6 +24,7 @@
     <main>
         <article>
             <h1>Biografia de Bill Gates</h2>
+            <img src="imagens/bill-gates.webp" id="bill" alt="Foto Bill Gates">
             <p>Bill Gates, nascido em 1955, é um empresário americano e fundador da empresa de softwares Microsoft, fundada em 4 de abril de 1975.</p>
 
             <p>Com uma fortuna calculada, em 2016, de 93.300 bilhões de dólares, atualmente, Bill Gates se dedica integralmente à Fundação Bill e Melinda Gates, a maior organização filantrópica do mundo.</p>
@@ -42,7 +45,22 @@
             <p>William Gates, mais conhecido pelos amigos como “Bill”, apelido de William em inglês, desde criança desenvolveu uma paixão pela leitura e pela competição. Gostava de se destacar tanto nos jogos esportivos quanto nos estudos e sua família estimulava este aspecto.</p>
 
             <p>Frequentou uma escola privada em Seattle, onde travaria amizade com Paul Allen (1953-2018) que compartilharia sua paixão pelos computadores. Ficavam horas mexendo no teletipo que havia na escola e inventavam programas para o aparelho.</p>
+
+            <p>Ao finalizar os estudos colegiais, Bill Gates vai para a Universidade de Harvard e decide cursar matemática. No entanto, seu colega de escola, Paul Allen, o chama para desenvolverem softwares e assim, acabam fundando a empresa Microsoft, em 4 de abril de 1975.</p>
+
+            <h2>Bill Gates e a criação da Microsoft<img src="imagens/microsoft.png" id="microsoft" alt="Logo Microsoft"></h2>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            }
+
+            else {
+                items.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
