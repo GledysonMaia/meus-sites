@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    i#menu {
+        display: none;
+    }
+
+    menu#items > ul > li {
+        width: 60px;
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+        margin: 3px;
+        border: none;
+        background-color: rgb(54, 54, 54);
+    }
+
+    menu#items {
+        display: block;
+        cursor: pointer;
+        text-align: left;
+    }
+}

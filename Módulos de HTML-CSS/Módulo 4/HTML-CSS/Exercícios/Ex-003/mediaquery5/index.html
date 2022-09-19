@@ -6,8 +6,9 @@
     <title>Media Queries</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
-<body>
+<body onresize="mudtam()">
     <header>
         <h1>Testando Media Queries</h1>
         <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>           
@@ -22,34 +23,11 @@
         </menu>
     </header>
     <main>
-        <article>
-            <h1>Biografia de Bill Gates</h2>
-            <img src="imagens/bill-gates.webp" id="bill" alt="Foto Bill Gates">
-            <p>Bill Gates, nascido em 1955, é um empresário americano e fundador da empresa de softwares Microsoft, fundada em 4 de abril de 1975.</p>
-
-            <p>Com uma fortuna calculada, em 2016, de 93.300 bilhões de dólares, atualmente, Bill Gates se dedica integralmente à Fundação Bill e Melinda Gates, a maior organização filantrópica do mundo.</p>
-
-            <h2>História de Bill Gates</h2>
-            <p>William Henry Gates III nasceu em 1955, em Seattle. Seu avô materno era um banqueiro e reuniu uma considerável fortuna.</p>
-            
-            <p>
-                A mãe, Mary Maxwell Gates (1929-1994), era professora formada pela Universidade de Washington onde conheceu seu marido, William Gates, Sr. Este era um estudante de direito que seria um dos mais destacados profissionais de sua área em Seattle.
-            </p>
-
-            <p>
-                O casal teve três filhos e após o nascimento da primogênita, Mary Gates deixa sua carreira profissional para se dedicar à família.
-            </p>
-
-            <h2>Infância e Formação</h2>
-
-            <p>William Gates, mais conhecido pelos amigos como “Bill”, apelido de William em inglês, desde criança desenvolveu uma paixão pela leitura e pela competição. Gostava de se destacar tanto nos jogos esportivos quanto nos estudos e sua família estimulava este aspecto.</p>
-
-            <p>Frequentou uma escola privada em Seattle, onde travaria amizade com Paul Allen (1953-2018) que compartilharia sua paixão pelos computadores. Ficavam horas mexendo no teletipo que havia na escola e inventavam programas para o aparelho.</p>
-
-            <p>Ao finalizar os estudos colegiais, Bill Gates vai para a Universidade de Harvard e decide cursar matemática. No entanto, seu colega de escola, Paul Allen, o chama para desenvolverem softwares e assim, acabam fundando a empresa Microsoft, em 4 de abril de 1975.</p>
-
-            <h2>Bill Gates e a criação da Microsoft<img src="imagens/microsoft.png" id="microsoft" alt="Logo Microsoft"></h2>
-        </article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsa maiores praesentium eveniet dicta doloremque reprehenderit nostrum minima odit aspernatur voluptate repudiandae quas tempora quaerat nemo rem libero. Nobis, similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos maiores, voluptatibus amet repellat alias quisquam. Velit est expedita ducimus beatae commodi inventore nobis, minus neque obcaecati deleniti? Sunt, praesentium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam unde consectetur, recusandae cumque maiores minima soluta consequatur voluptatibus dolorum deleniti rem, quia suscipit maxime, repellat doloribus modi doloremque delectus explicabo.</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatibus veritatis eum veniam temporibus perspiciatis porro aliquid eaque laudantium quis. Recusandae repellendus alias eaque similique laborum voluptate harum, eveniet ab? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolor inventore adipisci nam. Facere molestiae in mollitia quibusdam, harum laboriosam repudiandae, nostrum adipisci sequi laudantium deleniti ut eveniet cum. Explicabo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque atque reiciendis, praesentium laboriosam error voluptates impedit corporis ipsam eveniet illum, at sit asperiores porro dicta culpa officia ducimus provident ea.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus atque dolorem? Repudiandae vitae quasi commodi ducimus exercitationem quia, placeat voluptatibus ullam rem molestias possimus consequuntur eveniet obcaecati quod doloribus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet nihil pariatur non porro molestiae, at doloribus quam, ipsum obcaecati praesentium. Ex quia repellat pariatur quidem vel dignissimos deleniti earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam, sit laboriosam officia omnis, amet rerum nesciunt voluptatem ducimus repellendus mollitia incidunt labore repellat perferendis tenetur. Nobis unde illo itaque?</p>
     </main>
     <script>
         function clickMenu() {
@@ -59,6 +37,16 @@
 
             else {
                 items.style.display = 'block'
+            }
+        }
+
+        function mudtam() {
+            if (window.innerWidth >= 768) {
+                items.style.display = 'block'
+            }
+
+            else {
+                items.style.display = 'none'
             }
         }
     </script>
