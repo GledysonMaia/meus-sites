@@ -16,16 +16,49 @@ body {
 
 header {
     background-color: rgb(158, 158, 158);
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-header h1 {
+header > h1 {
     border: 2px dotted rgb(112, 112, 112);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
-    color: white;   
+    color: white;
+    flex: 0 0 200px;
 }
 
-nav {
+header > nav {
     border: 2px dotted rgb(112, 112, 112);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: rgba(0, 0, 0, 0.582);
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.582);
+    transition-duration: 250ms;
+    font-size: 1.2em;
+}
+
+header > nav > a:active {
+    background-color: rgb(130, 130, 255);
+    color: white;
+    transition-duration: 80ms;
+    padding: 7px;
 }
 
 main {
