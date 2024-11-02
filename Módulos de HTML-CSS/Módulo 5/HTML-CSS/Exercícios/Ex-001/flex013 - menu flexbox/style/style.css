@@ -24,14 +24,14 @@ header {
 }
 
 header > h1 {
-    border: 2px dotted rgb(112, 112, 112);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
+    /*border: 2px dotted rgb(112, 112, 112);*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
     color: white;
     flex: 0 0 200px;
 }
 
 header > nav {
-    border: 2px dotted rgb(112, 112, 112);
+    /*border: 2px dotted rgb(112, 112, 112);*/
 
     display: flex;
     flex-flow: row wrap;
@@ -39,7 +39,7 @@ header > nav {
 }
 
 header > nav > a {
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.87);
     color: rgb(199, 199, 199);
     text-decoration: none;
     padding: 5px;
